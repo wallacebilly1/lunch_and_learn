@@ -8,7 +8,6 @@ RSpec.describe PhotoFacade do
       
       expect(photos).to be_an(Array)
       expect(photos.count).to eq 10
-
       photos.each do |photo|
         expect(photo).to be_a(Photo)
         expect(photo.alt_tag).to be_a(String)

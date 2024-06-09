@@ -1,6 +1,6 @@
 class PhotoService
   def photos_from(country)
-    get_url("/search/photos/?query=#{country}")
+    get_url("search/photos/?query=#{country}")
   end
 
   private
