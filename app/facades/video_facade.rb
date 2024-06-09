@@ -1,7 +1,7 @@
 class VideoFacade
   def video_from(country)
-    json = service.search(country)
-    @video = 
+    json = service.video_from(country)
+    @video = Video.new(json[:items].first)
   end
 
   private

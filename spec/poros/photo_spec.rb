@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe Recipe do
+RSpec.describe Photo do
   before(:each) do
     @photo_attr = {
       "id": "gsllxmVO4HQ",
