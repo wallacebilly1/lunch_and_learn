@@ -16,6 +16,9 @@ RSpec.describe "Recipes API" do
       expect(data.first[:attributes][:url]).to be_a(String)
       expect(data.first[:attributes][:country]).to eq("thailand")
       expect(data.first[:attributes][:image]).to be_a(String)
+      expect(data.first[:attributes]).not_to have_key(:source)
+      expect(data.first[:attributes]).not_to have_key(:health_labels)
+      expect(data.first[:attributes]).not_to have_key(:ingredients)
     end
     
     it "returns all relevant recipe attributes for recipes from an empty search", :vcr do
