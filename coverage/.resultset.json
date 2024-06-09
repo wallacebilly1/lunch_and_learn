@@ -200,6 +200,7 @@
           1,
           1,
           1,
+          1,
           null,
           null,
           null
@@ -247,14 +248,14 @@
         "lines": [
           1,
           1,
-          1,
-          11,
+          2,
+          22,
           null,
           null,
           1,
           null,
           1,
-          1,
+          2,
           null,
           null
         ]
@@ -328,14 +329,14 @@
         "lines": [
           1,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null,
           1,
           null,
           1,
-          1,
+          2,
           null,
           null
         ]
@@ -474,8 +475,8 @@
           null,
           null,
           1,
-          11,
-          11,
+          21,
+          21,
           null,
           null
         ]
@@ -1403,8 +1404,8 @@
           null,
           null,
           1,
-          2,
-          2,
+          3,
+          3,
           null,
           null
         ]
@@ -1452,6 +1453,38 @@
           1,
           1,
           1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/billy/Turing/3mod/projects/lunch_and_learn/spec/requests/api/v1/learning_resources_request_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          10,
+          10,
           null,
           null,
           null,
@@ -1511,18 +1544,18 @@
         "lines": [
           1,
           1,
-          1,
+          2,
           null,
           null,
           1,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null,
           null
@@ -1555,21 +1588,21 @@
         "lines": [
           1,
           1,
-          1,
+          2,
           null,
           null,
           1,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          2,
+          2,
+          2,
+          2,
+          2,
           null,
           null,
           null
@@ -1599,8 +1632,53 @@
           1,
           null
         ]
+      },
+      "/Users/billy/Turing/3mod/projects/lunch_and_learn/app/controllers/api/v1/learning_resources_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/billy/Turing/3mod/projects/lunch_and_learn/app/serializers/learning_resources_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          2,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          10,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1717959618
+    "timestamp": 1717961274
   }
 }
