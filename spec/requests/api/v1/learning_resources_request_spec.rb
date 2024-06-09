@@ -24,5 +24,23 @@ RSpec.describe "Learning Resources API" do
         expect(image[:url]).to be_a(String)
       end
     end
+
+    it "returns an empty object if the query returns no results", :vcr do
+      get "/api/v1/learning_resources?country=jaskdfljiencknkdkkee"
+
+      expect(response).to be_successful
+      expect(response.status).to eq(200)
+
+      data = JSON.parse(response.body, symbolize_names: true)[:data]
+
+      expect(data[:id]).to be(nil)
+      expect(data[:type]).to eq("learning_resource")
+      expect(data[:attributes][:country]).to eq("jaskdfljiencknkdkkee")
+
+      expect(data[:attributes][:video]).to eq({})
+
+      expect(data[:attributes][:images]).to be_an(Array)
+      expect(data[:attributes][:images].count).to eq(0)
+    end
   end
 end

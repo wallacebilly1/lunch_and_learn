@@ -11,10 +11,14 @@ class LearningResourcesSerializer
 
   attribute :video do |object|
     video = object[:video]
-    {
-      title: video.title,
-      youtube_video_id: video.youtube_video_id
-    }
+    if video.present?
+      {
+        title: video.title,
+        youtube_video_id: video.youtube_video_id
+      }
+    else
+      {}
+    end
   end
 
   attribute :images do |object|

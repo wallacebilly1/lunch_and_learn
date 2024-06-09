@@ -1,7 +1,11 @@
 class VideoFacade
   def video_from(country)
     json = service.video_from(country)
-    @video = Video.new(json[:items].first)
+    if json && json[:items].any?
+      @video = Video.new(json[:items].first)
+    else
+      {} 
+    end
   end
 
   private
