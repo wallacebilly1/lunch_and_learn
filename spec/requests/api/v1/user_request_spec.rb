@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe "User Registration" do
+RSpec.describe "Users API" do
   describe "User Create" do
-    it "can create a user with valid attributes", :vcr do
+    it "can create a user with valid attributes" do
       body_data = {
         name: "Odell",
         email: "goodboy@ruffruff.com",
@@ -17,6 +17,7 @@ RSpec.describe "User Registration" do
 
       data = JSON.parse(response.body, symbolize_names: true)[:data]
 
+      expect(data[:type]).to eq('user')
       expect(data[:attributes][:name]).to eq('Odell')
       expect(data[:attributes][:email]).to eq('goodboy@ruffruff.com')
       expect(data[:attributes]).to have_key(:api_key)
