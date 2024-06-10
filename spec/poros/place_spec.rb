@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe Place do
   before(:each) do
-    @gplace_attr = {
+    @place_attr = {
       "type": "Feature",
       "properties": {
           "name": "Château de Sarzay",

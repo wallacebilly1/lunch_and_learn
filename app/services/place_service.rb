@@ -13,6 +13,7 @@ class PlaceService
     Faraday.new(url: "https://api.geoapify.com/") do |f|
       f.params["apiKey"] = Rails.application.credentials.geocode[:apiKey]
       f.params["categories"] = "tourism"
+      f.params["limit"] = "10"
     end
   end
 end
