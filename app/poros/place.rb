@@ -1,9 +1,10 @@
 class Place
-  attr_reader :name, :address, :place_id
+  attr_reader :name, :address, :place_id, :id
 
   def initialize(data)
     @name = data[:properties][:name]
     @address = data[:properties][:formatted]
     @place_id = data[:properties][:place_id]
+    @id = nil
   end
 end

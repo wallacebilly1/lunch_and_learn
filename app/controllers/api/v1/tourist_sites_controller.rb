@@ -6,6 +6,6 @@ class Api::V1::TouristSitesController < ApplicationController
     lon = geocode.lon
     places = PlaceFacade.new.tourist_sites_from(lat,lon)
 
-    render json: TouristSitesSerializer.new(places) status: :ok
+    render json: TouristSiteSerializer.new(places), status: :ok
   end
 end
