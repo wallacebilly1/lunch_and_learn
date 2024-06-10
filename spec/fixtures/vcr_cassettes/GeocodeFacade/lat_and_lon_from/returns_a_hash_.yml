@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.geoapify.com/v1/geocode/search?apiKey=a99210f6a6d049df9d57e22199bf2b55&country=thailand
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Jun 2024 15:22:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Api-Version:
+      - '1.0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - accept, accept-language, content-language, access-control-max-age, access-control-allow-headers,
+        access-control-allow-methods, access-control-allow-origin, allow, api-version,
+        cf-ray, content-encoding, content-type, date, expect-ct, server, status, vary,
+        cache-control, etag, last-modified, expires, host, cf-region-code, cf-timezone,
+        accept-encoding, x-forwarded-for, x-forwarded-proto, cf-visitor, user-agent,
+        cf-connecting-ip, cdn-loop, cf-ipcity, cf-ipcontinent, cf-ipcountry, cf-iplatitude,
+        cf-iplongitude, cf-metro-code, cf-postal-code, cf-region, x-forwarded-port
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, OPTIONS, PUT
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Content-Disposition:
+      - inline; filename=response.geojson
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=lfO%2BLqBGwrFSpaHpOLXVElgz29GT5Kek84yJMueQea%2F1e%2BSFDiwGVZ1wYsEakR5KQjkKkfxrUt95VpxCxIJa737wfilsNPLlrKnskNBvffCNzQqryYjUsYnKsgdC4nxbeg4%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 891a5b22dfcd51f1-DEN
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ0eXBlIjoiRmVhdHVyZUNvbGxlY3Rpb24iLCJmZWF0dXJlcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImRhdGFzb3VyY2UiOnsic291cmNlbmFtZSI6Im9wZW5zdHJlZXRtYXAiLCJhdHRyaWJ1dGlvbiI6IsKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzIiwibGljZW5zZSI6Ik9wZW4gRGF0YWJhc2UgTGljZW5zZSIsInVybCI6Imh0dHBzOi8vd3d3Lm9wZW5zdHJlZXRtYXAub3JnL2NvcHlyaWdodCJ9LCJjb3VudHJ5IjoiVGhhaWxhbmQiLCJjb3VudHJ5X2NvZGUiOiJ0aCIsImxvbiI6MTAwLjgzMjczLCJsYXQiOjE0Ljg5NzE5MjEsInJlc3VsdF90eXBlIjoiY291bnRyeSIsImZvcm1hdHRlZCI6IlRoYWlsYW5kIiwiYWRkcmVzc19saW5lMSI6IlRoYWlsYW5kIiwiYWRkcmVzc19saW5lMiI6IiIsImNhdGVnb3J5IjoiYWRtaW5pc3RyYXRpdmUiLCJ0aW1lem9uZSI6eyJuYW1lIjoiQXNpYS9CYW5na29rIiwib2Zmc2V0X1NURCI6IiswNzowMCIsIm9mZnNldF9TVERfc2Vjb25kcyI6MjUyMDAsIm9mZnNldF9EU1QiOiIrMDc6MDAiLCJvZmZzZXRfRFNUX3NlY29uZHMiOjI1MjAwfSwicGx1c19jb2RlIjoiN1A2MlZSV00rVjMiLCJyYW5rIjp7ImltcG9ydGFuY2UiOjAuODYyNjI3Mjg5MTU1NTM5OSwicG9wdWxhcml0eSI6MC43MjYxNDU3MjY3OTkwMzc5LCJjb25maWRlbmNlIjoxLCJtYXRjaF90eXBlIjoibWF0Y2hfYnlfY291bnRyeV9vcl9zdGF0ZSJ9LCJwbGFjZV9pZCI6IjUxN2ExOWM1NzI0YjM1NTk0MDU5ODk3NTRmYzM1Y2NiMmQ0MGYwMDEwMWY5MDExMzhkMWYwMDAwMDAwMDAwYzAwMjBiIn0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbMTAwLjgzMjczLDE0Ljg5NzE5MjFdfSwiYmJveCI6Wzk3LjM0MzgwNzIsNS42MTI4NTEsMTA1LjYzNjgxMiwyMC40NjQ4MzM3XX0seyJ0eXBlIjoiRmVhdHVyZSIsInByb3BlcnRpZXMiOnsiZGF0YXNvdXJjZSI6eyJzb3VyY2VuYW1lIjoib3BlbnN0cmVldG1hcCIsImF0dHJpYnV0aW9uIjoiwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMiLCJsaWNlbnNlIjoiT3BlbiBEYXRhYmFzZSBMaWNlbnNlIiwidXJsIjoiaHR0cHM6Ly93d3cub3BlbnN0cmVldG1hcC5vcmcvY29weXJpZ2h0In0sIm5hbWUiOiJUaGFpbGFuZCIsIm9sZF9uYW1lIjoiU2lhbSIsImNvdW50cnkiOiJUaGFpbGFuZCIsImNvdW50cnlfY29kZSI6InRoIiwibG9uIjoxMDEuNzAwMTc2MTE5MDc1OTksImxhdCI6MTMuMDM4NzYyMTUsInJlc3VsdF90eXBlIjoiY291bnRyeSIsImZvcm1hdHRlZCI6IlRoYWlsYW5kIiwiYWRkcmVzc19saW5lMSI6IlRoYWlsYW5kIiwiYWRkcmVzc19saW5lMiI6IiIsInRpbWV6b25lIjp7Im5hbWUiOiJBc2lhL0Jhbmdrb2siLCJvZmZzZXRfU1REIjoiKzA3OjAwIiwib2Zmc2V0X1NURF9zZWNvbmRzIjoyNTIwMCwib2Zmc2V0X0RTVCI6IiswNzowMCIsIm9mZnNldF9EU1Rfc2Vjb25kcyI6MjUyMDB9LCJwbHVzX2NvZGUiOiI3UDUzMlBRMitHMyIsInJhbmsiOnsiaW1wb3J0YW5jZSI6MC44NjI2MjcyODkxNTU1Mzk5LCJwb3B1bGFyaXR5IjowLjgyMDg5Mjk4NjExNTcxNTIsImNvbmZpZGVuY2UiOjEsIm1hdGNoX3R5cGUiOiJtYXRjaF9ieV9jb3VudHJ5X29yX3N0YXRlIn0sInBsYWNlX2lkIjoiNTFjODM3N2ZhZmNmNmM1OTQwNTkzMjI1ZWRhMWQ4MTMyYTQwZjAwMTAxZjkwMThlY2EwZDAwMDAwMDAwMDBjMDAyMGI5MjAzMDg1NDY4NjE2OTZjNjE2ZTY0In0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbMTAxLjcwMDE3NjExOTA3NTk5LDEzLjAzODc2MjE1XX0sImJib3giOls5Ny4zNDM4MDcyLDUuNjEyODUxLDEwNS42MzY4MTIsMjAuNDY0ODMzN119XSwicXVlcnkiOnsidGV4dCI6IiIsImNvdW50cnkiOiJ0aGFpbGFuZCIsInBhcnNlZCI6eyJjb3VudHJ5IjoidGhhaWxhbmQiLCJleHBlY3RlZF90eXBlIjoidW5rbm93biJ9fX0=
+  recorded_at: Mon, 10 Jun 2024 15:22:17 GMT
+recorded_with: VCR 6.2.0
