@@ -214,6 +214,7 @@
           1,
           1,
           1,
+          1,
           null,
           null,
           null
@@ -392,13 +393,15 @@
         "lines": [
           1,
           1,
+          null,
+          1,
           1,
           1,
           null,
           1,
           null,
           1,
-          0,
+          5,
           null,
           null
         ]
@@ -1578,6 +1581,43 @@
           null
         ]
       },
+      "/Users/billy/Turing/3mod/projects/lunch_and_learn/spec/requests/api/v1/sessions_request_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/billy/Turing/3mod/projects/lunch_and_learn/spec/requests/api/v1/user_request_spec.rb": {
         "lines": [
           1,
@@ -1599,6 +1639,7 @@
           null,
           1,
           null,
+          1,
           1,
           1,
           1,
@@ -1798,6 +1839,30 @@
           null
         ]
       },
+      "/Users/billy/Turing/3mod/projects/lunch_and_learn/app/controllers/api/v1/sessions_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/billy/Turing/3mod/projects/lunch_and_learn/app/serializers/user_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
       "/Users/billy/Turing/3mod/projects/lunch_and_learn/app/controllers/api/v1/users_controller.rb": {
         "lines": [
           1,
@@ -1814,17 +1879,8 @@
           null,
           null
         ]
-      },
-      "/Users/billy/Turing/3mod/projects/lunch_and_learn/app/serializers/user_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1718045674
+    "timestamp": 1718047276
   }
 }
