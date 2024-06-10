@@ -1,19 +1,26 @@
 require 'rails_helper'
 
-RSpec.describe "Users API" do
-  describe "User Create" do
-    it "can create a user with valid attributes", :vcr do
-      body_data = {
+RSpec.describe "Sessions API" do
+  describe "Sessions Create" do
+    it "returns the user data with a valid api key", :vcr do
+      user_attr = {
         name: "Odell",
         email: "goodboy@ruffruff.com",
         password: "treats4lyf",
         password_confirmation: "treats4lyf"
       }
       
-      post "/api/v1/users", params: body_data
+      User.create(user_attr)
+
+      sessions_attr = {
+        email: "goodboy@ruffruff.com",
+        password: "treats4lyf"
+      }
+
+      post "/api/v1/sessions", params: sessions_attr
 
       expect(response).to be_successful
-      expect(response.status).to eq(201)
+      expect(response.status).to eq(200)
 
       data = JSON.parse(response.body, symbolize_names: true)[:data]
 
