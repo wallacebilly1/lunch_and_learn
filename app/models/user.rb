@@ -7,6 +7,8 @@ class User < ApplicationRecord
 
   has_secure_password
 
+  has_many :favorites
+
   def generate_api_key
     self.api_key = SecureRandom.hex(16)
   end
