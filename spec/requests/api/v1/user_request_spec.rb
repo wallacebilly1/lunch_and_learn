@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Users API" do
   describe "User Create" do
-    it "can create a user with valid attributes", :vcr do
+    it "can create a user with valid attributes" do
       body_data = {
         name: "Odell",
         email: "goodboy@ruffruff.com",
