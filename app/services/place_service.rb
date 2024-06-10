@@ -1,6 +1,6 @@
 class PlaceService
   def tourist_sites_from(lat, lon)
-    get_url("v2/places?filter=circle:#{lon},#{lat},5000")
+    get_url("v2/places?filter=circle:#{lon},#{lat},100000")
   end
 
   private
