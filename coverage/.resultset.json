@@ -201,174 +201,25 @@
           1,
           1,
           1,
+          1,
           null,
           null,
           null
         ]
       },
-      "/Users/billy/Turing/3mod/projects/lunch_and_learn/app/controllers/api/v1/learning_resources_controller.rb": {
-        "lines": [
-          1,
-          1,
-          2,
-          2,
-          2,
-          null,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/billy/Turing/3mod/projects/lunch_and_learn/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/billy/Turing/3mod/projects/lunch_and_learn/app/facades/video_facade.rb": {
-        "lines": [
-          1,
-          1,
-          2,
-          2,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/billy/Turing/3mod/projects/lunch_and_learn/app/services/video_service.rb": {
-        "lines": [
-          1,
-          1,
-          2,
-          null,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          2,
-          2,
-          2,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/billy/Turing/3mod/projects/lunch_and_learn/app/poros/video.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/billy/Turing/3mod/projects/lunch_and_learn/app/facades/photo_facade.rb": {
-        "lines": [
-          1,
-          1,
-          2,
-          12,
-          null,
-          null,
-          1,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/billy/Turing/3mod/projects/lunch_and_learn/app/services/photo_service.rb": {
-        "lines": [
-          1,
-          1,
-          2,
-          null,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/billy/Turing/3mod/projects/lunch_and_learn/app/poros/photo.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          1,
-          10,
-          10,
-          null,
-          null
-        ]
-      },
-      "/Users/billy/Turing/3mod/projects/lunch_and_learn/app/serializers/learning_resources_serializer.rb": {
+      "/Users/billy/Turing/3mod/projects/lunch_and_learn/app/poros/geocode.rb": {
         "lines": [
           1,
           1,
           null,
           1,
-          null,
-          3,
-          null,
           1,
-          2,
-          null,
-          null,
           1,
-          2,
-          2,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          2,
-          null,
-          10,
-          null,
-          null,
-          null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1717961995
+    "timestamp": 1718032841
   }
 }

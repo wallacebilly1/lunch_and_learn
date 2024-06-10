@@ -58,7 +58,7 @@ RSpec.describe Geocode do
 
   it "exists" do
     expect(@geocode).to be_a Geocode
-    expect(@geocode.lat).to eq(1.8883335)
-    expect(@geocode.lon).to eq(46.603354)
+    expect(@geocode.lat).to eq(46.603354)
+    expect(@geocode.lon).to eq(1.8883335)
   end
 end
