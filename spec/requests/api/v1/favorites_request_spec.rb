@@ -81,7 +81,7 @@ RSpec.describe "Favorites API" do
       expect(response.status).to eq(200)
 
       data = JSON.parse(response.body, symbolize_names: true)[:data]
-      require 'pry'; binding.pry
+
       expect(data.first).to have_key(:id)
       expect(data.first[:type]).to eq("favorite")
 
@@ -93,6 +93,17 @@ RSpec.describe "Favorites API" do
         expect(recipe[:attributes][:country]).to eq("thailand")
         expect(recipe[:attributes][:created_at]).to be_a(String)
       end
+    end
+
+    it "returns an error if an invalid api_key is passed in" do      
+      get "/api/v1/favorites?api_key=badapikey"
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(401)
+
+      data = JSON.parse(response.body, symbolize_names: true)
+
+      expect(data[:error]).to eq ("Invalid api_key")
     end
   end
 end
