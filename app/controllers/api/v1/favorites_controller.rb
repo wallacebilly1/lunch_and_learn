@@ -2,11 +2,20 @@ class Api::V1::FavoritesController < ApplicationController
   before_action :find_user
 
   def create
-    if @user.present?
-      @user.favorites.create!(favorite_params)
+    if @current_user.present?
+      @current_user.favorites.create!(favorite_params)
       render json: { success: "Favorite added successfully" }
     else
-      render json: { error: 'Invalid api_key' }, status: :unauthorized
+      invalid_api_key
+    end
+  end
+
+  def index
+    if @current_user.present?
+      favorites = @current_user.favorites
+      render json: FavoriteSerializer.new(favorites).serializable_hash
+    else
+      invalid_api_key
     end
   end
 
@@ -17,6 +26,10 @@ class Api::V1::FavoritesController < ApplicationController
   end
 
   def find_user
-    @user = User.find_by(api_key: params[:api_key])
+    @current_user = User.find_by(api_key: params[:api_key])
+  end
+
+  def invalid_api_key
+    render json: { error: 'Invalid api_key' }, status: :unauthorized
   end
 end
